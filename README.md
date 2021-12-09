@@ -22,3 +22,6 @@
 
 * leetcode-92-反转链表-ii  
 [code](./leetcode/leetcode-92-反转链表-ii.js)
+
+* leetcode-202-快乐数    
+[code](./leetcode/leetcode-202-快乐数.js)
