@@ -12,10 +12,13 @@
 
 2021.12.8
 
-* leetcode-142-环形链表2  
-[code](./leetcode/leetcode-142-环形链表2.js)
+* leetcode-142-环形链表-ii    
+[code](./leetcode/leetcode-142-环形链表-ii.js)
 
 2021.12.9
 
 * leetcode-206-反转链表    
 [code](./leetcode/leetcode-206-反转链表.js)
+
+* leetcode-92-反转链表-ii  
+[code](./leetcode/leetcode-92-反转链表-ii.js)
