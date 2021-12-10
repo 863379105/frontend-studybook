@@ -35,3 +35,6 @@
 
 * leetcode-83-删除排序链表中的重复元素   
 [code](./leetcode/leetcode-83-删除排序链表中的重复元素.js)
+
+* leetcode-82-删除排序链表中的重复元素-ii   
+[code](./leetcode/leetcode-82-删除排序链表中的重复元素-ii.js)
