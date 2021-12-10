@@ -29,3 +29,6 @@
 2021.12.10
 * leetcode-61-旋转链表   
 [code](./leetcode/leetcode-61-旋转链表.js)
+
+* leetcode-19-删除链表的倒数第n个结点   
+[code](./leetcode/leetcode-19-删除链表的倒数第n个结点.js)
