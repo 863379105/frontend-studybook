@@ -38,3 +38,6 @@
 
 * leetcode-82-删除排序链表中的重复元素-ii   
 [code](./leetcode/leetcode-82-删除排序链表中的重复元素-ii.js)
+
+* leetcode-86-分隔链表  
+[code](./leetcode/leetcode-86-分隔链表.js)
