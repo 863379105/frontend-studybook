@@ -25,3 +25,7 @@
 
 * leetcode-202-快乐数    
 [code](./leetcode/leetcode-202-快乐数.js)
+
+2021.12.10
+* leetcode-61-旋转链表   
+[code](./leetcode/leetcode-61-旋转链表.js)
