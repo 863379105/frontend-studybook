@@ -32,3 +32,6 @@
 
 * leetcode-19-删除链表的倒数第n个结点   
 [code](./leetcode/leetcode-19-删除链表的倒数第n个结点.js)
+
+* leetcode-83-删除排序链表中的重复元素   
+[code](./leetcode/leetcode-83-删除排序链表中的重复元素.js)
