@@ -47,7 +47,7 @@
 [code](./leetcode/leetcode-20-有效的括号.js)
 
 2021.12.19
-* leetcode-622-设计循环队列 
+* leetcode-622-设计循环队列  
 [code](./leetcode/leetcode-622-设计循环队列.js)
 
 2021.12.20
