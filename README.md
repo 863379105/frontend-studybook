@@ -60,3 +60,6 @@
 2021.12.22
 * leetcode-707-设计链表  
 [code](./leetcode/leetcode-707-设计链表.js)
+
+* leetcode-143-重排链表  
+[code](./leetcode/leetcode-143-重排链表.js)
