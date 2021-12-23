@@ -54,5 +54,9 @@
 * leetcode-641-设计循环双端队列   
 [code](./leetcode/leetcode-641-设计循环双端队列.js)
 
-2021.12.21
-做了leetcode 138 和 969 ，没有解题，没有产出
+2021.12.21  
+* 做了leetcode 138 和 969 ，没有解题，没有产出
+
+2021.12.22
+* leetcode-707-设计链表  
+[code](./leetcode/leetcode-707-设计链表.js)
