@@ -67,3 +67,6 @@
 2021.12.26
 * leetcode-面试题0208环路检测    
 [code](./leetcode/leetcode-面试题0208环路检测.js)
+
+* leetcode剑指Offer18删除链表的节点    
+[code](./leetcode/leetcode剑指Offer18删除链表的节点.js)
