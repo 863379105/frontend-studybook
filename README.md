@@ -71,8 +71,12 @@
 * leetcode-面试题0203删除中间节点    
 [code](./leetcode/leetcode-面试题0203删除中间节点.js)
 
+* leetcode-面试题0304化栈为队    
+[code](./leetcode/leetcode-面试题0304化栈为队.js)
+
 * leetcode-剑指Offer18删除链表的节点    
 [code](./leetcode/leetcode-剑指Offer18删除链表的节点.js)
 
 * leetcode-445-两数相加ii    
 [code](./leetcode/leetcode-445-两数相加ii.js)
+
