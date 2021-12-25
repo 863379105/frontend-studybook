@@ -85,3 +85,6 @@
 
 * leetcode-844-比较含退格的字符串    
 [code](./leetcode/leetcode-844-比较含退格的字符串.js)
+
+* leetcode-946-验证栈序列    
+[code](./leetcode/leetcode-946-验证栈序列.js)
