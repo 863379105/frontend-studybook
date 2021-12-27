@@ -88,3 +88,10 @@
 
 * leetcode-946-验证栈序列    
 [code](./leetcode/leetcode-946-验证栈序列.js)
+
+2021.12.27
+* leetcode-144-二叉树的前序遍历    
+[code](./leetcode/leetcode-144-二叉树的前序遍历.js)
+
+* leetcode-145-二叉树的后序遍历    
+[code](./leetcode/leetcode-145-二叉树的后序遍历.js)
