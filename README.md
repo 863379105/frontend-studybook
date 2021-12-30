@@ -95,3 +95,7 @@
 
 * leetcode-145-二叉树的后序遍历    
 [code](./leetcode/leetcode-145-二叉树的后序遍历.js)
+
+2021.12.30
+* leetcode-112-路径总和    
+[code](./leetcode/leetcode-112-路径总和.js)
