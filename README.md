@@ -106,3 +106,6 @@
 * leetcode-509-斐波那契数    
 [code](./leetcode/leetcode-509-斐波那契数.js)
 
+* leetcode-589-n-叉树的前序遍历    
+[code](./leetcode/leetcode-589-n-叉树的前序遍历.js)
+
