@@ -109,3 +109,5 @@
 * leetcode-589-n-叉树的前序遍历    
 [code](./leetcode/leetcode-589-n-叉树的前序遍历.js)
 
+* leetcode-590-n-叉树的后序遍历    
+[code](./leetcode/leetcode-590-n-叉树的后序遍历.js)
