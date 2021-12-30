@@ -111,3 +111,6 @@
 
 * leetcode-590-n-叉树的后序遍历    
 [code](./leetcode/leetcode-590-n-叉树的后序遍历.js)
+
+* leetcode-226-翻转二叉树    
+[code](./leetcode/leetcode-226-翻转二叉树.js)
