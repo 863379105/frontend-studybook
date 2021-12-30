@@ -99,3 +99,6 @@
 2021.12.30
 * leetcode-112-路径总和    
 [code](./leetcode/leetcode-112-路径总和.js)
+
+* leetcode-222-完全二叉树的节点个数    
+[code](./leetcode/leetcode-222-完全二叉树的节点个数.js)
