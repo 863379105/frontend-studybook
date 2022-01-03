@@ -143,3 +143,7 @@
 
 * leetcode-703-数据流中的第-k-大元素    
 [code](./leetcode/leetcode-703-数据流中的第-k-大元素.js)
+
+* leetcode-110-平衡二叉树    
+[code](./leetcode/leetcode-110-平衡二叉树.js)
+
