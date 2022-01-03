@@ -137,3 +137,6 @@
 2022.1.3
 * leetcode-剑指offer40最小的k个数    
 [code](./leetcode/leetcode-剑指offer40最小的k个数.js)
+
+* leetcode-1046-最后一块石头的重量    
+[code](./leetcode/leetcode-1046-最后一块石头的重量.js)
