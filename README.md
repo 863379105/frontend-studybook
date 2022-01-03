@@ -118,3 +118,6 @@
 2021.12.31
 * leetcode-102-二叉树的层序遍历    
 [code](./leetcode/leetcode-102-二叉树的层序遍历.js)
+
+* leetcode-剑指offer32    
+[code](./leetcode/leetcode-剑指offer32.js)
