@@ -127,3 +127,10 @@
 
 * leetcode-107-二叉树的层序遍历-ii    
 [code](./leetcode/leetcode-107-二叉树的层序遍历-ii.js)
+
+* leetcode-103-二叉树的锯齿形层序遍历    
+[code](./leetcode/leetcode-103-二叉树的锯齿形层序遍历.js)
+
+* leetcode-104-二叉树的最大深度    
+[code](./leetcode/leetcode-104-二叉树的最大深度.js)
+
