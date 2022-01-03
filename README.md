@@ -121,3 +121,6 @@
 
 * leetcode-剑指offer32    
 [code](./leetcode/leetcode-剑指offer32.js)
+
+* leetcode-剑指offer54二叉搜索树的第k大节点    
+[code](./leetcode/leetcode-剑指offer54二叉搜索树的第k大节点.js)
