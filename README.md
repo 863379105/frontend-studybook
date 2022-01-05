@@ -153,3 +153,7 @@
 
 * leetcode-355-设计推特    
 [code](./leetcode/leetcode-355-设计推特.js)
+
+2022.1.5
+* leetcode-230-二叉搜索树中第k小的元素   
+[code](./leetcode/leetcode-230-二叉搜索树中第k小的元素.js)
