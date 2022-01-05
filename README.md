@@ -166,3 +166,6 @@
 
 * leetcode-199-二叉树的右视图   
 [code](./leetcode/leetcode-199-二叉树的右视图.js)
+
+* leetcode-面试题0405合法二叉搜索树   
+[code](./leetcode/leetcode-面试题0405合法二叉搜索树.js)
