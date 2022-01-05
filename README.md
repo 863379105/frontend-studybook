@@ -157,3 +157,6 @@
 2022.1.5
 * leetcode-230-二叉搜索树中第k小的元素   
 [code](./leetcode/leetcode-230-二叉搜索树中第k小的元素.js)
+
+* leetcode-100-相同的树   
+[code](./leetcode/leetcode-100-相同的树.js)
