@@ -176,3 +176,7 @@
 
 * leetcode-662-二叉树最大宽度   
 [code](./leetcode/leetcode-662-二叉树最大宽度.js)
+
+2022.1.16
+* leetcode-547-省份数量   
+[code](./leetcode/leetcode-547-省份数量.js)
