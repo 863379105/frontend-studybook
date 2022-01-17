@@ -181,3 +181,5 @@
 * leetcode-200-岛屿数量   
 [code](./leetcode/leetcode-200-岛屿数量.js)
 
+* leetcode-990-等式方程的可满足性   
+[code](./leetcode/leetcode-990-等式方程的可满足性.js)
