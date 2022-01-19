@@ -187,3 +187,6 @@
 2022.1.19
 * leetcode-684-冗余连接   
 [code](./leetcode/leetcode-684-冗余连接.js)
+
+* leetcode-1319-连通网络的操作次数   
+[code](./leetcode/leetcode-1319-连通网络的操作次数.js)
