@@ -183,3 +183,7 @@
 
 * leetcode-990-等式方程的可满足性   
 [code](./leetcode/leetcode-990-等式方程的可满足性.js)
+
+2022.1.19
+* leetcode-684-冗余连接   
+[code](./leetcode/leetcode-684-冗余连接.js)
