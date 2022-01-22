@@ -196,3 +196,6 @@
 2022.1.21
 
 2022.1.22
+
+* leetcode-128-最长连续序列   
+[code](./leetcode/leetcode-128-最长连续序列.js)
