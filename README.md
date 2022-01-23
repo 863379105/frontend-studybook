@@ -203,6 +203,9 @@
 [code](./leetcode/leetcode-947-移除最多的同行或同列石头.js)
 
 
-2022.1.22
+2022.1.23
 * leetcode-1202-交换字符串中的元素   
 [code](./leetcode/leetcode-1202-交换字符串中的元素.js)
+
+* leetcode-721-账户合并   
+[code](./leetcode/leetcode-721-账户合并.js)
