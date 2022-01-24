@@ -209,3 +209,7 @@
 
 * leetcode-721-账户合并   
 [code](./leetcode/leetcode-721-账户合并.js)
+
+2022.1.24
+* leetcode-685-冗余连接II   
+[code](./leetcode/leetcode-685-冗余连接II.js)
