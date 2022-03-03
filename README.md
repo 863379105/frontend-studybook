@@ -217,3 +217,14 @@
 2022.2.28
 * leetcode-剑指Offer51数组中的逆序对  
 [code](./leetcode/leetcode-剑指Offer51数组中的逆序对.js)
+
+2022.3.2
+* leetcode-69-sqrt-x
+[code](./leetcode/leetcode-69-sqrt-x.js)
+
+2022.3.3
+* leetcode-1-两数之和
+[code](./leetcode/leetcode-1-两数之和.js)
+
+* leetcode-35-搜索插入位置
+[code](./leetcode/leetcode-35-搜索插入位置.js)
