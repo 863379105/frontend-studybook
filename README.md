@@ -228,3 +228,7 @@
 
 * leetcode-35-搜索插入位置
 [code](./leetcode/leetcode-35-搜索插入位置.js)
+
+2022.3.7
+* leetcode-746-使用最小花费爬楼梯
+[code](./leetcode/leetcode-746-使用最小花费爬楼梯.js)
