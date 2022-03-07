@@ -232,3 +232,8 @@
 2022.3.7
 * leetcode-746-使用最小花费爬楼梯
 [code](./leetcode/leetcode-746-使用最小花费爬楼梯.js)
+
+
+2022.3.8
+* leetcode-120-三角形最小路径和
+[code](./leetcode/leetcode-120-三角形最小路径和.js)
