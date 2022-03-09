@@ -248,3 +248,13 @@
 
 * leetcode-198.-打家劫舍    
 [code](./leetcode/leetcode-198.-打家劫舍.js)
+
+2022.3.9
+* leetcode-152-乘积最大子数组     
+[code](./leetcode/leetcode-152-乘积最大子数组.js)
+
+* leetcode-300-最长递增子序列     
+[code](./leetcode/leetcode-300-最长递增子序列.js)
+
+* leetcode-322-零钱兑换     
+[code](./leetcode/leetcode-322-零钱兑换.js)
