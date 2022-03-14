@@ -258,3 +258,8 @@
 
 * leetcode-322-零钱兑换     
 [code](./leetcode/leetcode-322-零钱兑换.js)
+
+2022.3.14
+
+* 学习vue3源码之初始化过程    
+[Note](./vuecode/init.md)
