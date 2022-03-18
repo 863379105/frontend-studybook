@@ -263,3 +263,6 @@
 
 * 学习vue3源码之初始化过程    
 [Note](./vuecode/init.md)
+
+* 学习vue3源码之app.mount('#app') 
+[Note](./vuecode/mount.md)
