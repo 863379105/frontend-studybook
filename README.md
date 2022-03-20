@@ -266,3 +266,8 @@
 
 * 学习vue3源码之app.mount('#app') 
 [Note](./vuecode/mount.md)
+
+2022.3.20
+
+* 学习vue3源码之组件更新流程  
+[Note](./vuecode/组件更新流程.md)
