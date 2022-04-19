@@ -271,8 +271,3 @@
 
 * 学习vue3源码之组件更新流程  
 [Note](./vuecode/组件更新流程.md)
-
-2022.4.18
-
-* webpack 基础概念   
-[Note](./webpack/webpack%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5.md)
