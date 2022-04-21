@@ -49,7 +49,7 @@ Fiber 是采用链表实现的。每个 Virtual DOM 都可以表示为一个 fib
 }
 ```
 
-### Fiber 任务调度
+### Fiber 任务执行
 
 从根节点开始渲染和调度的过程可以分为两个阶段：render 阶段、commit 阶段。
 
@@ -66,4 +66,4 @@ Fiber 是采用链表实现的。每个 Virtual DOM 都可以表示为一个 fib
 
 commit 阶段将render阶段处理的 Fiber 链表转化成一个个真实的 dom 节点，并挂载到相应的位置。
 
-此阶段不可中断
+此阶段不可中断。
