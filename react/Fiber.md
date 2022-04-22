@@ -62,8 +62,145 @@ Fiber 是采用链表实现的。每个 Virtual DOM 都可以表示为一个 fib
 
 此阶段可以随时中断。
 
+**code**
+
+```js
+
+let wip = currentFiber;// 设置一个全局wip 指向当前处理的fiber
+
+// 处理当前任务单元（fiber）
+function performUnitOfWork() {
+  // 1. 处理完成当前fiber
+  const { type } = wip;
+  switch type {
+    ... // 根据不同的 fiber 类型处理 fiber 任务
+  }
+  // 2. 处理当前 fiber 的 child
+  if (wip.child) {
+    wip = wip.child;
+    return;
+  }
+  let current = wip;
+  while(current) {
+    if (current.sibling) {
+      wip = current.sibling;
+      return;
+    }
+    current = current.return;
+  }
+  wip = null;
+}
+
+// workLoop 调用 performUnitOfWork， 处理任务
+function workLoop() {
+  // render 阶段处理fiber
+  while (wip) {
+    performUnitOfWork();
+  }
+  // render 阶段结束
+
+  // 以下是 commit 阶段
+  // ....
+}
+
+```
+
 #### commit 阶段
 
 commit 阶段将render阶段处理的 Fiber 链表转化成一个个真实的 dom 节点，并挂载到相应的位置。
 
 此阶段不可中断。
+
+**code**
+
+```js
+
+const wipRoot = currentFiber; // 记录一下任务的根fiber 
+
+// ......
+
+function commitRoot() {
+  commitWork(wipRoot);
+  wipWork = null;
+}
+
+// commit 函数
+function commitWork(wip) {
+  if(!wip) return;
+  // commit 阶段从 根fiber开始，即开始记录的 wipRoot
+  const parentNode = wip.return.stateNode;
+  const { tag } = wip;
+  switch(tag) {
+    // 根据不同的 tag 对节点做不一样的操作
+  }
+
+  commitWork(wip.child);
+  commitWork(wip.sibling);
+}
+
+```
+
+#### render 和 commit 两个阶段完成试图更新的完整逻辑如下
+
+```js
+
+let wip = currentFiber;// 设置一个全局wip 指向当前处理的fiber
+let wipRoot = currentFiber; // 记录一下任务的根fiber 
+
+// 处理当前任务单元（fiber）
+function performUnitOfWork() {
+  // 1. 处理完成当前fiber
+  const { type } = wip;
+  switch type {
+    ... // 根据不同的 fiber 类型处理 fiber 任务
+  }
+  // 2. 处理当前 fiber 的 child
+  if (wip.child) {
+    wip = wip.child;
+    return;
+  }
+  let current = wip;
+  while(current) {
+    if (current.sibling) {
+      wip = current.sibling;
+      return;
+    }
+    current = current.return;
+  }
+  wip = null;
+}
+
+function commitRoot() {
+  commitWork(wipRoot);
+  wipWork = null;
+}
+
+// commit 函数
+function commitWork(wip) {
+  if(!wip) return;
+  // commit 阶段从 根fiber开始，即开始记录的 wipRoot
+  const parentNode = wip.return.stateNode;
+  const { tag } = wip;
+  switch(tag) {
+    // 根据不同的 tag 对节点做不一样的操作
+  }
+
+  commitWork(wip.child);
+  commitWork(wip.sibling);
+}
+
+// workLoop 调用 performUnitOfWork， 处理任务
+function workLoop() {
+  // render 阶段处理fiber
+  while (wip) {
+    performUnitOfWork();
+  }
+  // render 阶段结束
+
+  // 以下是 commit 阶段
+  // ....
+  if(!wip && wipRoot) {
+    commitRoot()
+  }
+}
+```
