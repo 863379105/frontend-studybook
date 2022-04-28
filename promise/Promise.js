@@ -2,6 +2,7 @@ class MyPromise {
   static PENDING = 'pending';
   static FUIFILLED = 'filfilled';
   static REJECTED = 'rejected';
+
   constructor(fn) {
     this.PromiseState = MyPromise.PENDING;
     this.PromiseResult = null;
@@ -10,7 +11,7 @@ class MyPromise {
     try {
       fn(this.resolve.bind(this), this.reject.bind(this));
     } catch (error) {
-      this.reject(error)
+      this.reject(error);
     }
   }
   resolve(result) {
@@ -19,7 +20,7 @@ class MyPromise {
         this.PromiseState = MyPromise.FUIFILLED;
         this.PromiseResult = result;
         this.onFulfilledCallbacks.map(cb => {
-          cb(this.PromiseResult)
+          cb(this.PromiseResult);
         })
       })
     }
@@ -30,7 +31,7 @@ class MyPromise {
         this.PromiseState = MyPromise.REJECTED;
         this.PromiseResult = reason;
         this.onRejectedCallbacks.map(cb => {
-          cb(this.PromiseResult)
+          cb(this.PromiseResult);
         })
       })
     }
@@ -47,23 +48,19 @@ class MyPromise {
             let x = onFulfilled(this.PromiseResult);
             resolvePromise(promise2, x, resolve, reject);
           } catch(e) {
-            //TODO
-            reject(e)
+            reject(e);
           }
         })
-      }
-      if (this.PromiseState === MyPromise.REJECTED) {
+      } else if (this.PromiseState === MyPromise.REJECTED) {
         setTimeout(() => {
           try {
             let x = onRejected(this.PromiseResult);
             resolvePromise(promise2, x, resolve, reject);
           } catch(e) {
-            reject(e)
+            reject(e);
           }
         })
-      }
-      //TODO
-      if (this.PromiseState === MyPromise.PENDING) {
+      } else if (this.PromiseState === MyPromise.PENDING) {
         this.onFulfilledCallbacks.push(() => {
           try {
             let x = onFulfilled(this.PromiseResult);
@@ -86,7 +83,6 @@ class MyPromise {
   }
 }
 
-//TODO
 function resolvePromise(promise2, x, resolve, reject) {
   if (x === promise2) {
     return reject(new TypeError('Chaining cycle detected for promise'));
@@ -94,23 +90,25 @@ function resolvePromise(promise2, x, resolve, reject) {
   
   if (x instanceof MyPromise) {
     if (x.PromiseState === MyPromise.PENDING) {
-      //TODO: reject
       x.then(
-        y => {
-          resolvePromise(promise2, y, resolve, reject)
+        result => {
+          resolvePromise(promise2, result, resolve, reject);
         },
-        reject
+        reason => {
+          reject(reason);
+        }
       );
     } else if (x.PromiseState === MyPromise.FULFILLED) {
-      resolve(x.PromiseResult)
+      // TODO: 为什么不调用 resolvePromise
+      resolve(x.PromiseResult);
     } else if (x.PromiseState === MyPromise.REJECTED) {
-      reject(x.PromiseResult)
+      reject(x.PromiseResult);
     }
   } else if (x !==null && ((typeof x === 'object') || (typeof x === 'function'))) {
     //TODO: 为 then 对象 或者函数
-    resolve(x)
+    resolve(x);
   } else {
-    resolve(x)
+    resolve(x);
   }
 }
 
