@@ -86,7 +86,7 @@ typescript 中类数组不能这样定义，ts 为类数组类型提供了相应
     interface Battery {
       checkBatteryStatus(): void
     }
-    
+
     // 接口之间可以可以继承
     // interface Battery extends Radio {
     //   checkBatteryStatus(): void
@@ -145,13 +145,130 @@ const testCopy: (x: number, y: number) => number = test;
 
 用 protected 修饰的属性和方法，只能访问不能修改
 
-### Class With Interface
-
 ### enum 
 
 ### 泛型
 
-#### 普通泛型
+```ts
+function getValue(arg) {
+  return arg;
+}
 
-#### 约束泛型
+const value = getValue(123);
+```
 
+如上述代码，当我们调用函数之前，并不知道参数的类型，也不知道返回值的类型，当调用的时候，会导致类型丢失。
+
+当定义时类型不确定，参数和返回值有一定关系时，可以使用泛型定义类型。
+
+```ts
+function getValue<T>(arg: T): T {
+  return arg;
+}
+
+const value = getValue(123);
+```
+
+泛型便是用来解决此类问题。
+
+#### 泛型与函数
+
+##### 普通泛型
+
+```ts
+function getValue<T>(arg: T): T {
+  return arg;
+}
+
+const value = getValue(123);
+```
+上述就是一个普通泛型的使用。
+
+##### 约束泛型
+
+```ts
+function getValue<T>(arg: T): T {
+  let len: number = arg.length;
+  return arg;
+}
+
+const value = getValue(123);
+```
+
+如上，当我们需要调用 arg 的 length 方法，但是我们此时不知道啊 arg 的类型，更无法知道 arg 是否存在 length 方法，此时是会产生错误的。
+
+普通泛型在这里已经无法满足我们的使用了，于是有了约束泛型，通过和 interface 的配合，使用约束泛型。
+
+```ts
+interface IWithLength{
+  length: number;
+}
+
+function getValue<T extends IWithLength>(arg: T): T {
+  let len: number = arg.length;
+  return arg;
+}
+
+const value = getValue('123');
+```
+
+通过上述代码，我们约束了我们的泛型必须是包含 length 属性的类型。
+
+#### 泛型与类
+
+```ts
+
+class Queue<T> {
+  private data = [];
+  push(item: T) {
+    this.data.push(item);
+  }
+  pop(): T {
+    return this.data.shift();
+  }
+}
+
+const strQueue = new Queue<string>();
+
+const numQueue = new Queue<number>();
+
+```
+
+#### 泛型与接口
+
+```ts
+interface KeyPair<T,U> {
+  key: T;
+  value: U
+}
+
+let kp1: KeyPair<number,string> = {
+  key: 202205,
+  value: "20220506"
+}
+
+let kp2: KeyPair<string,number> = {
+  key: "202205",
+  value: 20220506
+}
+```
+
+#### 泛型与接口与函数
+
+```ts
+interface IFun<T> {
+  (a: T, b: T): T
+}
+
+function plus(a: number, b: number): number {
+  return a + b;
+}
+
+function connect(a: string, b: string): string {
+  return a + b;
+}
+
+const a: IFun<number> = plus;
+const b: IFun<string> = connect;
+
+```
