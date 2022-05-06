@@ -61,22 +61,50 @@ typescript 中类数组不能这样定义，ts 为类数组类型提供了相应
 
 #### 作用
   * 对对象的形状进行描述
+
+    ```ts
+    interface IPerson {
+      name: string;
+      age?: number; // 可选属性
+      readonly id: number; // 只读属性
+    }
+
+    let jack: IPerson = {
+      name: 'jack',
+      age: 18,
+      id: 1
+    }
+    ```
+
   * 对类进行抽象
+
+    ```ts
+    interface Radio {
+      switchRadio(): void
+    }
+
+    interface Battery {
+      checkBatteryStatus(): void
+    }
+    
+    // 接口之间可以可以继承
+    // interface Battery extends Radio {
+    //   checkBatteryStatus(): void
+    // }
+
+    class Car implements Radio {
+      ...
+      switchRadio() {}
+    }
+
+    class Cellphone implements Radio, Battery {
+      ...
+      switchRadio() {}
+      checkBatteryStatus() {}
+    }
+    ```
+
   * Duck Typing（推断类型）
-
-```ts
-interface IPerson {
-  name: string;
-  age?: number; // 可选属性
-  readonly id: number; // 只读属性
-}
-
-let jack: IPerson = {
-  name: 'jack',
-  age: 18,
-  id: 1
-}
-```
 
 ### Function
 
@@ -94,6 +122,28 @@ const testCopy: (x: number, y: number) => number = test;
 ```
 
 ### Class
+
+#### 修饰符
+
+* public
+
+默认属性和方法都是 public
+
+* private
+
+用 private 修饰的属性和方法，外部无法访问，子类也无法访问
+
+* protected
+
+用 protected 修饰的属性和方法，外部无法访问，子类可以访问
+
+* static
+
+用 static 修饰的属性和方法，无法通过实例访问，只能通过类访问
+
+* readonly
+
+用 protected 修饰的属性和方法，只能访问不能修改
 
 ### Class With Interface
 
